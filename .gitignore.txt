@@ -1,0 +1,29 @@
+# Node.js qaramliklari va kesh
+node_modules/
+
+# JavaScript qaramliklarini qo'shish uchun
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Yaratilgan fayllar va papkalar
+dist/
+build/
+*.tgz
+
+# Maxfiy ma'lumotlar
+.env
+
+# IDE va kod muharrirlari uchun sozlamalar
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operatsion tizim fayllari
+.DS_Store
+Thumbs.db
+
+# Log fayllar
+logs/
+*.log
