@@ -2,9 +2,9 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const { dorama1 } = require('../movie/1.js')
+const { dorama2 } = require('../movie/2.js')
 
 
-// `exports` yordamida funksiyani eksport qilish
 function answerMessage(ctx) {
     const message = ctx.message.text;
     const videoFileId = ctx.message.video;
@@ -19,11 +19,13 @@ function answerMessage(ctx) {
         case '1':
             dorama1(ctx)
             break;
+        case '2':
+            dorama2(ctx)
+            break;
         default:
             ctx.reply('Bunday kodli dorama topilmadi. Dorama kodlarini @Dr_eam_dub kanalidan olishingiz mumkin.');
             break;
     }
 }
 
-// `module.exports` yordamida funksiyani eksport qilish
 module.exports = { answerMessage };
